@@ -33,6 +33,13 @@ public class Solution {
         /**
          * 填充代码
          */
-        return 0;
+        int number = 0;
+        for (int i = 0; i < guess.length ; i++) {
+            if (guess[i] == answer[i]) {
+                number++;
+            }
+        }
+
+        return number;
     }
 }
